@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zigong Location</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        #map {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+        .info {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Zigong Location</h1>
+        <div id="map"></div>
+        <div class="info">
+            <h2>About Zigong</h2>
+            <p>Zigong is a prefecture-level city located in the Sichuan Province of southwest China. It is situated approximately:</p>
+            <ul>
+                <li>170 km (106 miles) southeast of Chengdu, the provincial capital</li>
+                <li>260 km (162 miles) northeast of Chongqing</li>
+            </ul>
+            <h3>Climate</h3>
+            <p>Zigong has a subtropical monsoon climate characterized by:</p>
+            <ul>
+                <li>Mild winters and hot summers</li>
+                <li>Average annual temperature of around 17°C (63°F)</li>
+                <li>Annual rainfall of approximately 1,000 mm (39 inches)</li>
+                <li>High humidity throughout the year</li>
+            </ul>
+            <p>The city experiences a long frost-free period, making it suitable for agriculture. The best time to visit Zigong is during spring (March to May) and autumn (September to November) when the weather is most pleasant.</p>
+        </div>
+    </div>
+    <script>
+        var map = L.map('map').setView([29.3431, 104.7764], 10);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        L.marker([29.3431, 104.7764]).addTo(map)
+            .bindPopup('Zigong, Sichuan, China')
+            .openPopup();
+    </script>
+</body>
+</html>

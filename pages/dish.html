@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zigong Famous Dishes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .dish {
+            background: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .dish img {
+            width: 40%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .dish-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 60%;
+        }
+        .dish:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Zigong Famous Dishes</h1>
+        <div class="dish">
+            <img src="https://img0.baidu.com/it/u=3385751630,4123496252&fm=253&fmt=auto&app=138&f=JPEG?w=475&h=475" alt="自贡冷吃兔">
+            <div class="dish-content">
+                <h2>自贡冷吃兔 (Zigong Cold Rabbit)</h2>
+                <p>自贡冷吃兔 is a famous dish from Zigong, featuring tender rabbit meat prepared with a unique blend of spices. The dish is typically served cold, hence the name "cold rabbit." It's known for its spicy and numbing flavors, characteristic of Sichuan cuisine.</p>
+            </div>
+        </div>
+        <div class="dish">
+            <img src="https://img0.baidu.com/it/u=3882596117,193937850&fm=253&fmt=auto?w=665&h=380" alt="富顺豆花">
+            <div class="dish-content">
+                <h2>富顺豆花 (Fushun Tofu Pudding)</h2>
+                <p>富顺豆花 is a popular dessert originating from Fushun county in Zigong. It's a soft, silky tofu pudding often served with sweet syrup or savory toppings. The dish is known for its smooth texture and delicate flavor, making it a beloved local treat.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
